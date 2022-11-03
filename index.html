@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deteksi Nomor Plat Kendaraan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link href="Assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #101431">
+        <div class="container">
+          <a class="navbar-brand text-light px-3 py-2" href="https://syibi.github.io" style="font-weight: 700; font-size: 24px">Syifaul Qolbi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
+            <ul class="nav py-2 justify-content-center gap-3" style="font-size: 18px">
+              <li class="nav-item">
+                <a class="nav-link text-light active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#Detail">Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Akhir Navbar -->
+    <!-- Carousel -->
+    <main>
+      <div>
+        <section id="carousel" class="page-section">
+          <div class="container-carousel col-xxl-8 pt-4">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <!-- content carousel 1 -->
+                <div class="carousel-item active">
+                  <div class="carousel-caption text-start">
+                    <div class="row flex-lg pt-5">
+                      <div class="col-lg-6 pb-1">
+                        <img src="Assets/img/dt-plat.png" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" style="width: 80%; height: auto" />
+                      </div>
+                      <div class="col-lg-6 px-3 align-items-center pt-5">
+                        <h1 class="fw-semibold lh-2 mb-2 text-light">Deteksi Nomor Plat Kendaraan dengan Image Processing</h1>
+                        <p class="text-light">Sistem Deteksi Nomor Plat Kendaraan berbasis OpenCV dengan Metode K-Nearest Neighbour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- content carousel 2 -->
+                <div class="carousel-item">
+                  <div class="carousel-caption text-start">
+                    <div class="row flex-lg pt-5">
+                      <div class="col-lg-6 pb-1">
+                        <img src="Assets/img/dt-plat.png" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" style="width: 80%; height: auto" />
+                      </div>
+                      <div class="col-lg-6 px-3 align-items-center pt-5">
+                        <h1 class="fw-semibold lh-2 mb-2 text-light">Deteksi Nomor Plat Kendaraan dengan Image Processing</h1>
+                        <p class="text-light">Sistem Deteksi Nomor Plat Kendaraan berbasis OpenCV dengan Metode K-Nearest Neighbour</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="row pb-5 px-3">
+            <div class="col-lg-6">
+              <div class="btn-toolbar d-flex justify-content-center pt-4 gap-4" role="toolbar" aria-label="aksi">
+                <div class="btn-group" role="group">
+                  <button onclick="window.open('https://web.facebook.com/syaiful.aziz.33');" class="btn btn-social"><i class="bi bi-facebook"></i></button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button onclick="window.open('https://instagram.com/syibi_24');" class="btn btn-social"><i class="bi bi-instagram"></i></button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button onclick="window.open('https://wa.me/6285730310246');" class="btn btn-social"><i class="bi bi-whatsapp"></i></button>
+                </div>
+                <div class="btn-group" role="group">
+                  <button class="btn btn-social"><i class="bi bi-linkedin"></i></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 pb-5">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center pt-4">
+                <button type="button" class="btn btn-outline-primary btn-lg px-3 me-md-2">Download CV</button>
+                <button type="button" class="btn btn-github px-3 me-md-2" onclick="window.open('https://github.com/Syibi');"><i class="bi bi-github" style="color: white"></i>More on Github</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Carousel -->
+
+        <!-- Detail Section -->
+        <section id="Detail" class="page-section pt-5">
+          <div class="container pt-5 px-4">
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-3">
+              <div class="d-flex flex-column align-items-start gap-1">
+                <img src="Assets/img/deteksi.PNG" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" style="width: 60%; height: auto" />
+              </div>
+              <div class="d-flex flex-column align-items-start gap-1">
+                <div class="d-flex flex-column gap-2">
+                  <h2 class="fw-semibold mb-0 text-light">Tentang Projek</h2>
+                  <div class="line"></div>
+                  <p class="text-light pt-2">Sistem ini berfungsi untuk mendeteksi nomor plat kendaraan b.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container pt-5 px-4">
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-3">
+              <div class="d-flex flex-column align-items-start gap-1 order-lg-2">
+                <img src="Assets/img/step.png" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" style="width: 100%; height: auto" />
+              </div>
+              <div class="d-flex flex-column align-items-start gap-1 order-lg-1">
+                <div class="d-flex flex-column gap-2">
+                  <h2 class="fw-semibold mb-0 text-light">Prinsip Kerja</h2>
+                  <div class="line"></div>
+                  <p class="text-light pt-2">
+                    Kamera webcam akan mengambil gambar secara langsung pada kendaraan yng berada pada jangkauan kamera, data dari akamera akan diproses menggunakan program python pada komputer secara langsung pada program ini menggunakan
+                    library OpenCV untuk proses pengolahan gambranya gambar hasil capture secara realtime akan di lakukan proses pengolahan gambar terlbih dahulu agar memudahkan proses deteksi. antara lain (efek negatif, biner, threshold,
+                    kemudian diambil countur dan )
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container pt-5 px-4">
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-3">
+              <div class="d-flex flex-column align-items-start gap-1">
+                <img src="Assets/img/hasil.png" class="d-block mx-auto img-fluid" alt="Bootstrap Themes" style="width: 70%; height: auto" />
+              </div>
+              <div class="d-flex flex-column align-items-start gap-1">
+                <div class="d-flex flex-column gap-2">
+                  <h2 class="fw-semibold mb-0 text-light">Hasil</h2>
+                  <div class="line"></div>
+                  <p class="text-light pt-2">data hasil deteksi diambil dengan jumlah karakter yang paling banyak. hasil tersebtu akan di tampilkan pada gambar hasil dan menyimpan nomor plat yang terdeteksi pada dokumen eksel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Detail -->
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section">
+          <div class="container px-4 pt-5" id="Contact">
+            <div class="row pt-5">
+              <div class="text-center">
+                <h2>Contact Me</h2>
+                <p class="text-light pt-2">If you have any questions or would like to discuss an opportunity to work together, feel free to get in touch.</p>
+              </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 pt-3 pb-2">
+              <div class="d-flex flex-column align-items-start gap-4">
+                <div class="row">
+                  <div class="col-md-auto">
+                    <button class="btn"><i class="bi-fill bi-telephone-fill"></i></button>
+                  </div>
+                  <div class="col-md-auto">
+                    <h3 class="mb-0 text-light">Phone</h3>
+                    <p class="text-light">+6285-730-310-246</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-auto">
+                    <button class="btn"><i class="bi-fill bi-envelope-fill"></i></button>
+                  </div>
+                  <div class="col-md-auto">
+                    <h3 class="mb-0 text-light">Email</h3>
+                    <p class="text-light">syifaulqolbi24@gmail.com</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-auto">
+                    <button class="btn"><i class="bi-fill bi-geo-alt-fill"></i></button>
+                  </div>
+                  <div class="col-md-9">
+                    <h3 class="fw-semibold mb-0 text-light">Address</h3>
+                    <p class="text-light">Jalan Batulapis RT 01 RW 04 Desa Sendangagung Kecamatan Paciran Kabupaten Lamongan <br />Jawa Timur (62264)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column align-items-start">
+                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                  <div class="row pt-2">
+                    <div class="col-md-6 mb-4">
+                      <div class="form-floating">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required />
+                        <label class="floatingInput">Your Name</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
+                        <label class="floatingInput">Your Email</label>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required />
+                        <label class="floatingInput">Subject</label>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-4">
+                      <div class="form-floating">
+                        <textarea class="form-control" name="message" style="height: 120px" placeholder="Message" required></textarea>
+                        <label class="floatingInput">Message</label>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-outline-primary btn-md px-2">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="row row-cols-1 row-cols-2 align-items-md-center">
+          <h5 class="footer-h5"><b>Syifaul Qolbi </b>| Portofolio</h5>
+          <h5 class="footer-cp">&copy; Copyright 2022</h5>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript code -->
+    <script>
+      /* Code for changing active
+            link on clicking */
+      var btns = $("#navigation .nav .nav-link");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+      /* Code for changing active
+            link on Scrolling */
+      $(window)
+        .scroll(function () {
+          var distance = $(window).scrollTop();
+          $(".page-section").each(function (i) {
+            if ($(this).position().top <= distance + 250) {
+              $(".nav a.active").removeClass("active");
+              $(".nav a").eq(i).addClass("active");
+            }
+          });
+        })
+        .scroll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
